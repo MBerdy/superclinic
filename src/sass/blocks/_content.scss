@@ -1,0 +1,37 @@
+.content {
+    position: relative;
+    min-height: 572px;
+    background: #f6f6f6;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    padding: 37px 0 47px 0;
+    &__block {
+        display: none;
+        &_active {
+            display: flex;
+            justify-content: space-between;
+        }
+    }    
+    &__descr {
+        margin-top: 97px;
+        width: 417px;
+    }
+    &__header {        
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #000000;        
+    }
+    &__text {
+        margin-top: 34px;        
+        font-family: HelveticaNeueCyr;
+        font-size: 14px;
+        line-height: 15px;
+        color: #000000;
+    }
+    &__img {
+        max-height: 488px; 
+        max-width: 450px;
+    }
+}

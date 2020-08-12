@@ -1,0 +1,48 @@
+.block {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    &__item {
+        width: 300px;
+        border-right: 1px solid $main-color;
+        &:nth-child(3) {
+            border-right: none;
+        }
+        &_active {
+            &:after {
+                content: "";
+                width: 0;
+                height: 20px;
+                border-left: 67px solid transparent;
+                border-right: 67px solid transparent;
+                border-top: 134px solid #fff;
+                position: absolute;
+                top: 100%;
+                left: 25%;
+                z-index: 5;
+            }
+        }
+    }
+    &__img {
+        width: 91px;
+        height: 91px;
+        margin: 0 auto;
+    }
+    &__text {
+        text-decoration: none;
+        color: #000000;
+        display: block;
+        margin: 0 auto;
+        margin-top: 35px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.6s;
+        &:hover {
+            color: $main-color;
+        }
+    }
+}

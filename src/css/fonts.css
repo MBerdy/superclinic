@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'PF Din Text Cond Pro';
+    src: url('PFDinTextCondPro-Regular.woff2') format('woff2'),
+        url('PFDinTextCondPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Karla';
+    src: url('Karla-Regular.woff2') format('woff2'),
+        url('Karla-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('HelveticaNeueCyr-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,28 @@
+.promo {
+    position: relative;
+    background: url(../../img/bg_promo.jpg) center (center/cover) no-repeat;
+    height: 602px;
+    padding: 136px 0 223px 0;
+    &__descr {
+        margin: 0 0 0 auto;
+        width: 465px;
+        text-align: right;        
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+    &__title {
+        margin-top: 2px;
+        font-family: PF Din Text Cond Pro;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 47px;
+        line-height: 55px;
+        color: #000000;
+    }
+}

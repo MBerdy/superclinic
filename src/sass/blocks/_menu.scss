@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 21px 0px 22px 0px;
+    list-style: none;
+    &__link {
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }        
+    }
+    &__item {
+        padding-right: 23px;
+        &:nth-child(4) {
+            padding-right: 0;
+        }
+        &:nth-child(5) {
+            display: none;
+        }        
+    }
+}
+.humberger {
+    display: none
+}

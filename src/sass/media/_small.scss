@@ -1,0 +1,104 @@
+@media (max-width: 767px) {
+    .header {
+        height: 65px;
+        &__nav {
+            justify-content: start;
+        }
+        &__logo {
+            margin-top: 10px;
+        }
+    }
+    .btn_small {
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 40%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: 0.6s all;
+        &_active {
+            left: 0;
+        }
+        &__item {
+            padding-right: 0;
+            padding-top: 10px;
+        }
+        &__link {
+            font-size: 15px;
+        }
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 12px;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $main-color;
+            margin-bottom: 2px;
+            transition: 0.6s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .block {
+        &__item {
+            &:after {
+                left: 10%;
+            }
+        }
+        &__img {
+            height: 50px;
+            width: 50px;
+            img {
+                max-width: 50px;
+                max-height: 50px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    }
+    .content {
+        &__descr {
+            width: 250px;
+        }
+        &__img {
+            margin: auto;
+            img {
+                max-width: 200px;
+                max-height: 200px;
+            }
+        }
+    }
+    .btn_big {
+        min-width: 150px;
+        height: 32px;
+    }
+}

@@ -1,0 +1,42 @@
+.btn {
+    background-color: #fff;
+    border: 1px solid $main-color;
+    border-radius: 5px;
+    color: $main-color;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover {
+        background: $main-color;
+        color: #fff;        
+    }    
+    &_small {
+        min-width: 210px;
+        height: 32px;
+        margin-top: 15px;
+    }
+    &_blue {
+        min-width: 210px;
+        height: 32px;
+        background: $main-color;
+        border: 1px solid #2f80ed;
+        color: #ffffff;
+        margin-top: 64px;
+        &:hover {
+            border: none;
+            box-shadow: 3px 3px 20px $main-color;
+        }
+    }
+    &_big {
+        min-width: 220px;
+        height: 44px;
+        font-style: normal;
+        font-weight: bold;
+        margin-top: 18px;
+    }
+}
